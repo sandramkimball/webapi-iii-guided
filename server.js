@@ -12,10 +12,17 @@ function dateLogger(req, res, next){
   next();
 }
 
+function visitedLogger(req, res, next){
+  console.log(`GET/${}`);
+
+  next();
+}
+
 //global middleware
 server.use(helmet());//third party
 server.use(express.json());//built in
 server.use(dateLogger)//custom middleware
+server.use(visitedLogger)//custom middleware
 
 server.use('/api/hubs', hubsRouter);
 

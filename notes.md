@@ -15,3 +15,13 @@ _optimize for readability_
 -built-in: included with express. Ex: '
 -third party: ust be installed from 'npm' or 'yarn'
 -custom: we code these!
+
+
+##Types (based on how it's being used)
+
+-global: runs on every request
+-
+-
+
+ORDER MATTERS!! It goes top to bottom, left to right.
+
